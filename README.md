@@ -25,4 +25,3 @@ Open: `http://YOUR_PI_IP:4000`
 ## Security
 
 This dashboard can control Docker. Keep it private on your home network.
-# server-dashboard
