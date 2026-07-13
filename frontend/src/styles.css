@@ -163,6 +163,7 @@ a { color: inherit; text-decoration: none; }
 .status-pill.running { background: rgba(114,240,179,.1); color: #72f0b3; }
 .container-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 20px 0 13px; }
 .container-tags span {
+  display: inline-flex; align-items: center; gap: 5px;
   border: 1px solid #29323d; border-radius: 99px;
   padding: 5px 9px; color: #7f8b9b; font: 11px ui-monospace, monospace;
 }

@@ -21,7 +21,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY backend/app ./app
 COPY config ./config
+COPY scripts ./scripts
 COPY --from=frontend-build /frontend/dist ./app/static
+
+RUN chmod +x /app/scripts/*.sh
 
 EXPOSE 8088
 

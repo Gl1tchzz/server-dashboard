@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Play, RotateCcw, Square, Terminal, UploadCloud } from "lucide-react";
+import { ExternalLink, GitBranch, Github, Play, RotateCcw, Square, Terminal, UploadCloud } from "lucide-react";
 import type { Project } from "../types";
 
 type Props = {
@@ -24,6 +24,10 @@ export function ProjectCard({ project, onAction, onLogs, onDeploy }: Props) {
       </div>
 
       <div className="container-tags">
+        <span>
+          <GitBranch size={13} /> {project.branch ?? "main"}
+        </span>
+        <span>{project.auto_deploy === false ? "Manual deploys" : "Auto deploys"}</span>
         {project.container_statuses.map((container) => (
           <span key={container.name}>
             {container.name} · {container.status}

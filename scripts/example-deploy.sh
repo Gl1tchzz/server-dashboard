@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-APP_DIR="/opt/docker/example-project"
-BRANCH="main"
+APP_DIR="${DASHBOARD_PROJECT_DIR:-/opt/docker/example-project}"
+BRANCH="${DASHBOARD_PROJECT_BRANCH:-main}"
 
 cd "$APP_DIR"
 

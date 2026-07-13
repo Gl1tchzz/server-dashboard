@@ -4,8 +4,9 @@ projects:
     description: eBay deal detection and Discord notifications
     repository: https://github.com/Gl1tchzz/eBayDealDetectionSystem
     branch: main
+    auto_deploy: true
     compose_dir: /opt/docker/macbook-tracker/app
-    deploy_script: /opt/docker/macbook-tracker/deploy.sh
+    deploy_script: /app/scripts/deploy-project.sh
     url: ""
     containers:
       - macbook-tracker
@@ -15,8 +16,9 @@ projects:
     description: Home server monitoring and control centre
     repository: https://github.com/Gl1tchzz/server-dashboard
     branch: main
+    auto_deploy: true
     compose_dir: /opt/docker/server-dashboard
-    deploy_script: ""
+    deploy_script: /app/scripts/deploy-project.sh
     url: "http://home-server:8088"
     containers:
       - server-dashboard

@@ -15,6 +15,7 @@ export type Project = {
   description?: string;
   repository?: string;
   branch?: string;
+  auto_deploy?: boolean;
   compose_dir?: string;
   deploy_script?: string;
   url?: string;
