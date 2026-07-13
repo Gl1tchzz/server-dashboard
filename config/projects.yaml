@@ -1,0 +1,22 @@
+projects:
+  - id: macbook-tracker
+    name: MacBook Tracker
+    description: eBay deal detection and Discord notifications
+    repository: https://github.com/Gl1tchzz/eBayDealDetectionSystem
+    branch: main
+    compose_dir: /opt/docker/macbook-tracker/app
+    deploy_script: /opt/docker/macbook-tracker/deploy.sh
+    url: ""
+    containers:
+      - macbook-tracker
+
+  - id: server-dashboard
+    name: Server Dashboard
+    description: Home server monitoring and control centre
+    repository: https://github.com/Gl1tchzz/server-dashboard
+    branch: main
+    compose_dir: /opt/docker/server-dashboard
+    deploy_script: ""
+    url: "http://home-server:8088"
+    containers:
+      - server-dashboard
