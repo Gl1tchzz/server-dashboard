@@ -48,7 +48,7 @@ app.post("/api/containers/:name/:action", async (req, res) => {
 });
 
 app.post("/api/deploy/macbook-tracker", (req, res) => {
-  execFile("/mnt/NAS/server/infrastructure/scripts/auto-update-macbook-tracker.sh", [], (error, stdout, stderr) => {
+  execFile("/app/deploy-scripts/auto-update-macbook-tracker.sh", [], (error, stdout, stderr) => {
     if (error) return res.status(500).json({ error: error.message, stdout, stderr });
     res.json({ ok: true, stdout, stderr });
   });
