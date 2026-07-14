@@ -5,7 +5,7 @@ projects:
     repository: https://github.com/Gl1tchzz/eBayDealDetectionSystem
     branch: main
     auto_deploy: true
-    compose_dir: /opt/docker/macbook-tracker/app
+    compose_dir: /opt/docker/macbook-tracker
     deploy_script: /app/scripts/deploy-project.sh
     url: ""
     containers:
@@ -19,6 +19,6 @@ projects:
     auto_deploy: true
     compose_dir: /opt/docker/server-dashboard
     deploy_script: /app/scripts/deploy-project.sh
-    url: "http://home-server:8088"
+    url: "http://home:8088"
     containers:
       - server-dashboard
